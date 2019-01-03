@@ -1,0 +1,105 @@
+<!-- <mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Login</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form class="example-form">
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Email" [(ngModel)]="login1.email" name="email" required>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Password" [(ngModel)]="login1.password" type="password" name="password" required>
+            </mat-form-field>
+          </td>
+        </tr>
+          <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+                  <mat-radio-group>
+                        <mat-radio-button value="student">Student</mat-radio-button>
+                        <mat-radio-button value="admin">Admin</mat-radio-button>
+                  </mat-radio-group>
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="login()" color="primary" [mat-dialog-close]="true">Login</button>
+
+  </mat-card-actions>
+  <span>Not a Member?<a [routerLink]="['register']">Register</a></span>
+</mat-card> -->
+
+<!-- <mat-card > 
+  <mat-toolbar style="background:lightskyblue">
+    <span style="padding: 0% 40%">Login</span>
+  </mat-toolbar>
+  <form class="example-form">
+      <form class="example-form">
+          <table class="example-full-width" cellspacing="0">
+            <div style="padding: 0% 10%">
+            <tr>
+              <td>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Email" [(ngModel)]="login1.email" name="email">
+                </mat-form-field>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Password" [(ngModel)]="login1.password" type="password" name="password" >
+                </mat-form-field>
+              </td>
+            </tr>
+
+          
+
+           
+          </div>
+          </table>
+        </form>
+    <mat-card-actions style="padding: 0% 40%">
+        <button mat-stroked-button (click)="login()" color="primary">Login</button>
+      </mat-card-actions>
+      <span style="padding: 0% 35%">Not a Member?<a [routerLink]="['register']">Register</a></span>  
+  </form>
+</mat-card> -->
+<div class="login-body">
+  <mat-card class="loginMatCardCls">
+    <div class="loginTitleDivCls">
+      <h5 class="loginTitleCls">Sign in</h5>
+    </div>
+    <div>
+      <form class="loginFormCls">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="E-mail" [(ngModel)]="login1.email" name="email">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Password" type="password" [(ngModel)]="login1.password" name="password">
+        </mat-form-field>
+        <div class="loginCheckDivCls">
+          <span class="loginCheckBoxCls">
+            <mat-checkbox>Remember me</mat-checkbox>
+          </span>
+          <span><a href="">Forgot password?</a></span>
+        </div>
+        <button class="btn btn-primary btn-flat loginSubmitBtnCls" (click)="login()">Sign in</button><br><br>
+        <span style="padding: 242px">OR</span>
+        <button class="btn btn-primary btn-flat loginSubmitBtnCls" (click)="socialSignIn('google')">Google+</button><br><br>
+        <div class="register-link text-center">
+          <p>Don't have an Account? <a class="forgotPasswordLinkCls" [routerLink]="['/register']">Register Now</a></p>
+        </div>
+      </form>
+    </div>
+  </mat-card>
+</div>

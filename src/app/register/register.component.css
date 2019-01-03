@@ -1,0 +1,92 @@
+ ::ng-deep .mat-form-field-infix {
+      
+         width: 250px!important;
+     }
+    
+    .login-body {
+        background-color: #F5F5F5;
+        height: 100vh;
+      }
+      .loginMatCardCls {
+        background-color: #ffffff;
+        width: 30%;
+        padding: 0px;
+        position: absolute;
+        margin: 7% 37%;
+        border-radius: 5px;
+      }
+      .loginTitleCls {
+        text-align: center;
+        color: #FFFFFF;
+      }
+      .loginTitleDivCls {
+        background-color: #33B5E5;  
+        padding: 4% 0%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      .loginSubmitBtnCls {
+        margin-left: 2%;
+        color: #33B5E5;
+        width: 95%;
+        background-color: #ffffff;
+        border: 1px solid #33B5E5;
+        border-radius: 25px;
+      }
+      .registerFormCls {
+          padding: 24px;
+      }
+      ::ng-deep .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+        color: #33B5E5;
+        background-color: #FFFFFF;
+        border-color: #33B5E5;
+      }
+      ::ng-deep .btn-primary {
+        color: #33B5E5;
+        background-color: #FFFFFF;
+        border-color: #33B5E5;
+    }
+      ::ng-deep .btn-primary:hover {
+        color: #33B5E5;
+        background-color: #FFFFFF;
+        border-color: #33B5E5;
+    }
+    
+    
+    .loginCheckBoxCls {
+        margin-right: 10%;
+        margin-left: 8%;
+    }
+    .loginCheckDivCls {
+        margin-bottom: 3%;
+    }
+    ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+        color: #33B5E5;
+    }
+    ::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+        background-color: #33B5E5;
+    }
+    ::ng-deep .mat-form-field-infix {
+        display: block;
+        position: relative;
+        flex: auto;
+        min-width: 0;
+        width: 350px!important;
+    }
+    ::ng-deep .mat-checkbox .mat-checkbox-frame {
+        border-color: #33B5E5;
+    }
+    ::ng-deep .mat-checkbox-checked .mat-checkbox-background {
+        background-color: #33B5E5 !important;
+    }
+    ::ng-deep .mat-checkbox-inner-container {
+        margin-top: 5px!important;
+    }
+    ::ng-deep .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+        box-shadow: transparent!important;
+    }
+    ::ng-deep .btn-primary.focus, .btn-primary:focus {
+        box-shadow: transparent!important;
+    }
+    
+    

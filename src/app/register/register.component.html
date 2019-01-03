@@ -1,0 +1,51 @@
+
+
+<div class="login-body">
+  <mat-card class="loginMatCardCls">
+    <div class="loginTitleDivCls">
+      <h5 class="loginTitleCls">Sign Up</h5>
+    </div>
+    <div>
+
+  <form class="registerFormCls" [formGroup]="registerdata" fxLayout="column" >
+          <div  class="input-row" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="20px" >
+                  <mat-form-field fxFlex>
+                      <input matInput formControlName="firstname"  placeholder="First Name" name="firstname">
+                     
+                    </mat-form-field>
+                    <span *ngIf="!registerdata.get('firstname').valid && registerdata.get('firstname').touched">First Name can not be empty</span>
+                 <mat-form-field fxFlex>
+                  <input matInput formControlName="lastname" placeholder="Last Name" name="lastname">
+                
+                </mat-form-field>
+                <span *ngIf="!registerdata.get('lastname').valid && registerdata.get('lastname').touched">Last Name can not be empty</span>
+             
+            </div>  
+     
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="E-mail"  formControlName="email" name="email">
+        </mat-form-field>
+        
+        <mat-form-field>
+          <input matInput placeholder="Password" formControlName="password" type="password" name="password" >
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="ConfirmPassword" type="password" name="cpassword"  >
+        </mat-form-field>
+        
+        <div class="loginCheckDivCls">
+          <span class="loginCheckBoxCls"><mat-checkbox>I agree to the terms of user </mat-checkbox></span>  
+        </div>
+      
+        <button class="btn btn-primary btn-flat loginSubmitBtnCls" (click)="register()">Sign Up</button>
+        <br>
+        <br>
+        <div class="register-link text-center">
+          <span>Already a Member?</span>
+            <a class="forgotPasswordLinkCls" [routerLink]="['/']">Login Now</a>
+         
+        </div>
+      </form>
+    </div>
+  </mat-card>
+</div>

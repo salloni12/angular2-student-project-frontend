@@ -1,0 +1,49 @@
+
+<div class="row pt-5">
+  <div class="col-md-6 mx-auto">
+    <div class="card rounded-0">
+      <div class="card-header">
+        <h3 class="mb-0">Add Student Details</h3>
+      </div>
+      <div class="card-body">
+        <form class="form" [formGroup]="addgroup">
+            <div class="form-group">
+             <label for="">FirstName</label>
+                <input  formControlName="firstname" name="firstname" type="text" class="form-control rounded-0" />
+              </div>
+
+              <div class="form-group">
+                <label for="">LastName</label>
+                   <input formControlName="lastname"  name="lastname" type="text" class="form-control rounded-0" />
+                 </div>
+                 <div class="form-group">
+                  <label for="">Department</label>
+                     <input formControlName="department"  name="address" type="text" class="form-control rounded-0" />
+                   </div>
+
+                 <div class="form-group">
+                  <label for="">Address</label>
+                     <input formControlName="address"  name="address" type="text" class="form-control rounded-0"  />
+                   </div>
+
+          <div class="form-group">
+            <label for="">Email</label>
+            <input formControlName="email"  name="email" type="text" class="form-control rounded-0" />
+          </div>
+
+          <div class="form-group">
+              <label for="">Contact</label>
+              <input formControlName="contact"  name="contact" type="number" class="form-control rounded-0" />
+            </div>
+
+         
+            <button  type="submit" class="btn btn-primary float-right" (click)="SaveUser()" >Add</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   
